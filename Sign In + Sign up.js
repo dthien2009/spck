@@ -46,5 +46,4 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
         alert("Form submitted successfully!");
         window.location.href = "login.html";
     }
-
 });

@@ -16,7 +16,7 @@ header {
 
 header h1 {
     margin: 0;
-    margin-left: -150px;
+    margin-left: -250px;
 }
 
 nav ul {
@@ -114,6 +114,7 @@ footer {
     color: white;
     font-size: 18px;
     background-color: #333;
+    margin-left: -20px;
 }
 
 h2 {

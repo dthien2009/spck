@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="./payment page.css">
+    <!-- Kết nối file CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h2>Trang Thanh Toán</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="name">Tên Người Nhận</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa Chỉ</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Phương Thức Thanh Toán</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Thẻ Tín Dụng</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Chuyển Khoản Ngân Hàng</option>
+                </select>
+            </div>
+            <button type="submit">Thanh Toán</button>
+        </form>
+    </div>
+    <script src="./payment page.js"></script>
+    <!-- Kết nối file JS -->
+</body>
+
+</html>

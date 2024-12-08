@@ -47,6 +47,7 @@ function renderFunction(article) {
         articleElement.innerHTML = `
             <img class="img" src="${article[i].img}" alt="${article[i].name}" />
             <p class="blue">${article[i].name}</p>
+            <p class="blue">${article[i].money}$</p>
             <button class="btn-mua" onclick="addToCart(event, ${article[i].id}, '${article[i].name}')">Purchase</button>
         `;
         articleContainer.appendChild(articleElement);
