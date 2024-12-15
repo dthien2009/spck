@@ -4,7 +4,7 @@ const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const addressInput = document.getElementById('address');
 const paymentMethodInput = document.getElementById('payment-method');
-
+const totalContainer = document.querySelector('.total');
 // Lắng nghe sự kiện submit form
 form.addEventListener('submit', function(e) {
     e.preventDefault(); // Ngăn chặn hành động gửi form mặc định
@@ -28,8 +28,16 @@ form.addEventListener('submit', function(e) {
         return;
     }
 
+    // // Lấy tổng tiền từ giỏ hàng    
+    // const totalText = totalContainer.textContent;
+    // const totalMatch = totalText.match(/Total: (\d+)\$/); // Tìm tổng tiền bằng regex
+    // let totalAmount = 0;
+    // if (totalMatch) {
+    //     totalAmount = parseInt(totalMatch[1], 10); // Chuyển tổng tiền thành số nguyên
+    // }
+
     // Hiển thị thông báo thành công
-    alert(`Cảm ơn ${name}, thanh toán của bạn đã được xử lý thành công!`);
+    alert(`Thanks ${name}, your payment has been processed successfully!`);
     localStorage.removeItem('cart');
     // Chuyển hướng sang trang chủ
     window.location.href = "./home.html"; // Thay "index.html" bằng đường dẫn tới trang chủ của bạn
